@@ -1,0 +1,16 @@
+{
+	"name": "Gameloggd",
+	"short_name": "GL",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#FFE9D2",
+	"theme_color": "#FFE1C4",
+	"orientation": "landscape",
+	"icons": [
+	{
+		"src": "GL.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}
+	]
+}

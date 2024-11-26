@@ -1,0 +1,138 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    </style>
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="links">
+        <h4 class="Review"><a href="review.html">About</a></h4>
+        <h4 class="Backlog"><a href="backlog.html">Profile</a></h4>
+        <h4 class="Contact"><a href="contact.html">Rankings</a></h4>
+		<h4 class="Home"><a href="index.html">GL</a></h4>
+		</div>
+<h1 class="testing"><span id="prof">Profile</span></h1>
+<input id="yay">
+<button id="update">Submit</button>
+<h1 class="testing_2">Favourite Games</h1>
+
+
+
+<div class="crown">
+<h1 class="box1"><span id="prof_2">Type in name</span></h1>
+<input id="yay2">
+<button id="update2">Submit</button>
+<img class="crownimage" src="crown.png" alt="crownimage">
+</div>
+<div class="box1">
+<h1 class="box2"><span id="prof_3">Type in name</span></h1>
+<input id="yay3">
+<button id="update3">Submit</button>
+</div>
+<div class="box2">
+<h1 class="box3"><span id="prof_4">Type in name</span></h1>
+<input id="yay4">
+<button id="update4">Submit</button>
+</div>
+<div class="box3">
+<h1 class="box4"><span id="prof_5">Type in name</span></h1>
+<input id="yay5">
+<button id="update5">Submit</button>
+</div>
+</div>
+<div class="box4">
+<h1 class="box5"><span id="prof_6">Type in name</span></h1>
+<input id="yay6">
+<button id="update6">Submit</button>
+</div>
+<div class="backlog2">
+<h1 class="testing_3">Gamelog</h1>
+<div class="backlog_adding">
+
+
+<h1 class="backlog_game">Add to Gamelog</h1>
+<form>
+    <input id="yay7" type="text" placeholder="Enter game title">
+    <button id="update7" type="submit">Add to Gamelog</button>
+</form>
+<ul>
+<div class='nest'>
+
+</div>
+</ul>
+</div>
+<div class='work'>
+</div>
+</div>
+
+
+
+<script>
+function clickAction() {
+prof.textContent = yay.value;
+yay.style.display = "none";
+update.style.display = "none";
+}
+function clickActionFavoriteGames() {
+      prof_2.textContent = yay2.value;  // Update Favourite Game Name
+         // Hide button
+    }
+	function clickAction2ndfavgame() {
+	prof_3.textContent = yay3.value;
+	}
+	function clickAction3rdfavgame() {
+	prof_4.textContent = yay4.value; 
+	}
+	function clickAction4thfavgame() {
+	prof_5.textContent = yay5.value;
+	}
+	function clickAction5thfavgame() {
+	prof_6.textContent = yay6.value;
+	}
+update2.onclick = clickActionFavoriteGames;
+update.onclick = clickAction;
+update3.onclick = clickAction2ndfavgame;
+update4.onclick = clickAction3rdfavgame;
+update5.onclick = clickAction4thfavgame;
+update6.onclick = clickAction5thfavgame;
+</script>
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+
+  <script>
+    // Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAtfsTZWCXYsFpyXbeBkc75F7vUobz7wMU",
+      authDomain: "gameloggd.firebaseapp.com",
+      projectId: "gameloggd",
+      storageBucket: "gameloggd.firebasestorage.app",
+      messagingSenderId: "630905993322",
+      appId: "1:630905993322:web:837100ad1f037fb6d43213",
+      measurementId: "G-FSC072YCQG"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+	
+	
+	
+
+  </script>
+  <script src="db.js"></script>
+  <script src="ui.js"></script>
+  
+
+<footer class="footer1">
+<h2 class="foooter2">Gameloggd</h2>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    </style>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div class="links">
+        <h4 class="Review"><a href="review.html">About</a></h4>
+        <h4 class="Backlog"><a href="backlog.html">Profile</a></h4>
+        <h4 class="Contact"><a href="contact.html">Rankings</a></h4>
+		<h4 class="Home"><a href="index.html">GL</a></h4>
+		</div>
+<h1>Top 3 Games</h1>
+<div class="ranking">
+<div class="sh2">
+<h2 class="sh2">Silent Hill 2 (2001)</h2>
+<img class="sh2_image" src="sh2.png" alt="sh2image">
+<h3 class="sh2_descrip">James Sunderland returns to Silent Hill in search of his deceased wife Mary after supposedly receiving a letter from her telling James that she's waiting for him at their "special space".</h3>
+<img class="sh2_stars" src="stars.png" alt="sh2stars">
+</div>
+</div>
+<div class="mgs3">
+<h2 class="mgs3">Metal Gear Solid<br>Snake Eater</h2>
+<img class="mgs3_image" src="mgs3.png" alt="mgs3image">
+<h3 class="mgs3_descrip">In 1964, a U.S government operative by the codename of "Naked Snake" must infiltrate mountainous Soviet Territory to rescue a rocket-scientist and prevent him from building a weapon of mass destruction.</h3>
+<img class="mgs3_stars" src="stars.png" alt="mgs3stars">
+</div>
+<div class="sifu">
+<h2 class="sifu">SIFU</h2>
+<img class="sifu_image" src="sifu.png" alt="sifuimage">
+<h3 class="sifu_descrip">After witnessing the death of his father at the hands of his former pupil, he begins a path of vengeance. Alongside him he holds a talisman passed down within his family that allows him to revive at the cost of ageing.</h3>
+<img class="sifu_stars" src="stars.png" alt="sifustars">
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+
+  <script>
+    // Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAtfsTZWCXYsFpyXbeBkc75F7vUobz7wMU",
+      authDomain: "gameloggd.firebaseapp.com",
+      projectId: "gameloggd",
+      storageBucket: "gameloggd.firebasestorage.app",
+      messagingSenderId: "630905993322",
+      appId: "1:630905993322:web:837100ad1f037fb6d43213",
+      measurementId: "G-FSC072YCQG"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+	
+	
+	
+
+  </script>
+  <script src="db.js"></script>
+  <script src="ui.js"></script>
+  
+
+
+<footer class="footer1">
+<h2 class="foooter2">Gameloggd</h2>
+</footer> 
+<script src="app.js"></script> 
+</body>
+</html>
